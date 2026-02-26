@@ -12,7 +12,7 @@ const NavBar = () => {
 
                 <li>
                     <Link
-                        className="hover:bg-pink-700 hover:text-white hover:border-2 hover:p-2 text-pink-600"
+                        className="p-2 hover:bg-pink-700 hover:text-white  text-pink-600"
                         to="/"
                     >
                         Home
@@ -21,7 +21,7 @@ const NavBar = () => {
 
                 <li>
                     <Link
-                        className="hover:bg-pink-700 hover:text-white hover:border-2 hover:p-2 text-pink-600"
+                        className="p-2 hover:bg-pink-700 hover:text-white  text-pink-600"
                         to="/register"
                     >
                         Register
@@ -30,7 +30,7 @@ const NavBar = () => {
 
                 <li>
                     <Link
-                        className="hover:bg-pink-700 hover:text-white hover:border-2 hover:p-2 text-pink-600"
+                        className="p-2 hover:bg-pink-700 hover:text-white text-pink-600"
                         to="/login"
                     >
                         Login
