@@ -106,12 +106,12 @@ const Movies = () => {
                                         Genre : {movie.description}
                                     </h4>
 
-                                    <br />
+
 
                                     <h4 className="text-sm text-left text-pink-950">
                                         Release Date : {new Date(movie.date).toLocaleDateString("en-GB")}
-                                    </h4>
-
+                                    </h4><br />
+                                    <p className="text-pink-500 text-xs italic text-center">Click me to add reviews</p>
                                 </Link>
 
                             ))
