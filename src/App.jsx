@@ -33,34 +33,41 @@ const App = () => {
         },
       ],
     },
+
     {
       path: "/dashboard",
       element: <Dashboard />,
       children: [
+
         {
           index: true,
           element: <Welcome />
-
         },
+
         {
           path: "Movies",
           element: <Movies />,
           children: [
             {
               path: ":id",
-              element: <Movieform />,
+              element: <Movieform />
             },
             {
               path: ":id/review",
               element: <Reviewform />
-            },
-            {
-              path: ":id/reviews",
-              element: <Reviewlist />
             }
           ]
-        }]
-    },
+        },
+
+        // Reviews Page (No ID)
+        {
+          path: "reviews",
+          element: <Reviewlist />
+        }
+
+      ]
+    }
+
   ]);
 
   return (

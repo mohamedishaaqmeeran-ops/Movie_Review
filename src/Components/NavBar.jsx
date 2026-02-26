@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
-        <div className="flex justify-between items-center p-4 bg-white shadow">
+        <div className="flex justify-between items-center p-2 bg-white shadow">
 
-            <h1 className="text-2xl font-bold text-pink-600">
+            <h1 className="text-md sm:text-2xl font-bold text-pink-600">
                 🎬 MovieReview
             </h1>
 
-            <ul className="flex gap-20">
+            <ul className="flex gap-2 sm:gap-20">
 
                 <li>
                     <Link

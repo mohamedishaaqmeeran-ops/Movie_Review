@@ -20,28 +20,28 @@ const Movies = () => {
     }, []);
 
     return (
-        <div className="p-6">
+        <div className="sm:p-5">
 
             <h2 className="text-lg font-bold text-pink-600">Search</h2>
-            <div className="flex gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-5">
 
                 <input
                     type="text"
                     placeholder="Search movies..."
-                    className="border border-pink-300 p-2 w-80 bg-white rounded-lg"
+                    className="border border-pink-300 p-2 w-50 bg-white rounded-lg"
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                 />
 
                 <input
                     type="date"
-                    className="border border-pink-300 p-2 w-60 bg-white rounded-lg text-gray-500"
+                    className="border border-pink-300 p-2 w-50 bg-white rounded-lg text-gray-500"
                     value={dateFilter}
                     onChange={(e) => setDateFilter(e.target.value)}
                 />
 
                 <select
-                    className="border border-pink-300 p-2 w-60 bg-white rounded-lg text-gray-500"
+                    className="border border-pink-300 p-2 w-50 bg-white rounded-lg text-gray-500"
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
                 >
@@ -52,13 +52,13 @@ const Movies = () => {
 
             </div>
 
-            <h1 className="text-3xl mb-6 font-bold text-pink-600">
+            <h1 className="text-3xl mb-6 mt-5 font-bold text-pink-600">
                 Movies 🎬
             </h1>
-
+            <Outlet />
             <div className="flex gap-10">
 
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                     {
                         movies
@@ -87,7 +87,7 @@ const Movies = () => {
                                 <Link
                                     key={movie.id}
                                     to={`/dashboard/Movies/${movie.id}`}
-                                    className="border p-3 shadow hover:shadow-lg bg-white"
+                                    className="border p-2 bg-white w-50 sm:w-auto border-pink-500 transition-transform duration-300 hover:scale-105 "
                                 >
 
                                     <img
@@ -119,7 +119,7 @@ const Movies = () => {
 
                 </div>
 
-                <Outlet />
+
 
             </div>
 

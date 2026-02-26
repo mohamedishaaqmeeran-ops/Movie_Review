@@ -26,9 +26,9 @@ const Reviewlist = () => {
 
     return (
 
-        <div className="p-5 pr-0 w-100 bg-pink-600 min-h-screen">
+        <div className="p-1 md:p-5 pr-0  md:w-100 bg-pink-600 min-h-screen">
 
-            <h2 className="text-xl mb-4 font-bold text-white">
+            <h2 className="text-xl mb-4 font-bold text-white text-center">
                 All Movie Reviews 🎬
             </h2>
 
@@ -44,7 +44,7 @@ const Reviewlist = () => {
                     return (
 
                         <div key={movie.id}
-                            className="mb-4 border p-2 mr-5 bg-white rounded-lg">
+                            className="mb-4 border p-2 mr-1 bg-white rounded-lg">
 
                             <h3 className="font-bold text-lg text-pink-500">
                                 Movie Name : {movie.name}<hr></hr>
@@ -63,7 +63,7 @@ const Reviewlist = () => {
                                     movieReviews.map(r => (
                                         <p className="text-pink-950" key={r.id}>
                                             username : {r.name}<br></br>
-                                            Rating : {r.rating}<hr></hr>
+                                            Rating : {r.rating}<br></br>
                                             Review : {r.review}<hr></hr>
                                         </p>
 
