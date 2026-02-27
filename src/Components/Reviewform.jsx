@@ -71,7 +71,7 @@ const ReviewForm = () => {
           onChange={(e) => setReview(e.target.value)}
         />
         <div className="flex justify-center md:mt-8">
-          <button className="bg-green-500 text-white px-4 py-2 rounded" onClick={() =>
+          <button className="bg-green-500 text-white px-4 py-2 rounded cursor-pointer" onClick={() =>
             navigate(`/dashboard/Movies/`)
           }>
             Submit
