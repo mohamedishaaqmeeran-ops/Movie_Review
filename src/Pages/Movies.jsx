@@ -34,7 +34,8 @@ const Movies = () => {
                 />
 
                 <input
-                    type="date"
+                    type="date"Date
+                    placeholder=""
                     className="border border-pink-300 p-2 w-50 bg-white rounded-lg text-gray-500"
                     value={dateFilter}
                     onChange={(e) => setDateFilter(e.target.value)}
